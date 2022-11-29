@@ -8,21 +8,50 @@
   </head>
   <body>
     <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Anno</th>
+          <th>Presenze</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Luca</td>
+          <td rowspan="3">2021</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td colspan="2">Maria</td>
+          <td>27</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table>
       <tr>
         <th>Nome</th>
-        <th>Anno</th>
-        <th>Presenze</th>
+        <td>Carlo</td>
       </tr>
       <tr>
-        <td>Luca</td>
-        <td>2021</td>
-        <td>30</td>
-      </tr>
-      <tr>
-        <td>Maria</td>
-        <td>2021</td>
-        <td>27</td>
+        <th>Cognome</th>
+        <td>oashjoijasdo</td>
       </tr>
     </table>
+    <!-- SEZIONE FORM -->
+    <form method="POST" action="indirizzodelserver">
+      <input type="text" placeholder="Inserisci nome" />
+      <input type="password" />
+      <input type="checkbox" />
+      <input type="date" />
+      <select>
+        <option value="uno">1</option>
+        <option value="due">2</option>
+        <option value="tre">3</option>
+      </select>
+      <button type="submit">Click me</button>
+      <button type="reset">Pulisci il form</button>
+    </form>
+    <footer></footer>
   </body>
 </html>
